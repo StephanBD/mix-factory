@@ -1,0 +1,72 @@
+@use "sass:math";
+// @import "dart_scss/0_reset/minireset.scss";
+
+// @import "dart_scss/defaultVariables.scss";
+
+// //==========================custome variables==========================*/
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap");
+
+// $fontUrl: "../webfonts/";
+// @font-face {
+//   font-family: $fontFamily;
+//   font-style: normal;
+//   font-weight: 700;
+//   // font-display: block;
+//   src: url(#{$fontUrl+$importFont});
+// }
+// @font-face {
+//   font-family: $font2;
+//   font-style: normal;
+//   font-weight: 500;
+//   // font-display: block;
+//   src: url(#{$fontUrl+$importFont});
+// }
+
+// //==========================================================*/
+@import "dart_scss/settings";
+
+// @import "dart_scss/settings/maps";
+// @import "dart_scss/settings/functions";
+// @import "dart_scss/settings/mixins";
+
+// @import "dart_scss/settings/base_old";
+// @import "dart_scss/settings/forms";
+// @import "dart_scss/settings/dark-mode";
+// @import "dart_scss/settings/buttons";
+// @import "dart_scss/settings/toggles";
+
+// ------------------------
+// @import "dart_scss/layout";
+@import "dart_scss/layout/columns";
+@import "dart_scss/layout/flex-2";
+@import "dart_scss/layout/grid";
+@import "dart_scss/layout/col";
+@import "dart_scss/layout/layout";
+
+// ------------------------
+@import "dart_scss/components";
+// @import "dart_scss/utilities";
+// ------------------------
+// @import "dart_scss/utilities/border";
+@import "dart_scss/utilities/margin-padding";
+@import "dart_scss/utilities/utilities";
+// @import "dart_scss/utilities/filter";
+// @import "dart_scss/utilities/images";
+// @import "dart_scss/utilities/modal";
+// @import "dart_scss/utilities/shadow";
+// @import "dart_scss/utilities/shapes";
+// @import "dart_scss/utilities/transform";
+// @import "dart_scss/utilities/width-height";
+// @import "dart_scss/utilities/background-colors";
+@import "dart_scss/utilities/typography";
+// @import "dart_scss/utilities/placeholder";
+// @import "dart_scss/utilities/alignment";
+
+// ------------------------
+// @import "dart_scss/debug";
+
+//====================================================//
+h1 {
+  margin-top: 40px;
+}

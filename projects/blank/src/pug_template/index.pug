@@ -1,0 +1,167 @@
+extends ../pug_partials/_layout.pug
+//-=====================================
+
+
+block head
+	- var title = 'title'
+	//- include layout/_seo.html
+	link( rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css") 
+
+//--------------------------------------
+
+block content
+	//- -------------
+	.navbar-fixed
+		nav.navbar-md.flex.p
+			a(href="#").btn LOGO
+			button.navbar-toggle.bold X
+			ul.navbar-list-col
+				a(href="#").btn our menu
+				a(href="#").btn gallery
+				a(href="#").btn culture
+				a(href="#").btn events
+				a(href="#").btn catering
+				a(href="#").btn visit us
+			ul.navbar-list.b.b-1
+				a(href="#").btn: i.fas.fa-star
+				a(href="#").btn: i.fas.fa-star
+				a(href="#").btn: i.fas.fa-star
+
+
+
+	//- ----------------
+	.bg-brown.img-container.py-xl._reveal-hover.p
+		img(src="img/bg.jpg", alt="") 
+		.content-fluid-m.flex
+			.flex-6-md 
+				.img-container.h-200
+					img(src="img/product.jpg", alt="")
+				.p.bg-white
+					span.title-md Perfect Bread 
+					p.subtitle-sm SEASON FAVORITE
+					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ut rerum quidem, hic totam at dolorum temporibus.
+					div.t-tertiary
+						i.fas.fa-star.box-2
+						i.fas.fa-star.box-2
+						i.fas.fa-star.box-2
+						i.fas.fa-star.box-2
+						i.fas.fa-star.box-2
+					.flex.ai-center
+						.box-2.b.b-gray.circle.fas.fa-chevron-left 
+						.box-4.bg-brown.circle
+						.box-4.bg-tertiary.circle
+						.box-4.bg-brown.circle
+						.box-2.b.b-gray.circle.fas.fa-chevron-right
+
+	//- -------------
+	.bg-black.img-container.py-xl._reveal-hover.px
+		img(src="img/bg.jpg", alt="").opacity-4
+		.content-m.t-white.t-center
+			h1.title-xl.t-white Made width wheat
+			p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, earum!
+			button.b.b-white.btn-lg MAKE YOUR ORDER
+
+	//- ------------
+	.content-m.bg-white.py-md.flex.px
+		.flex-8-sm.flex-gap-2.p
+			h2.title-md Art of cakes
+			p.subtitle-sm we create delicious memories
+			p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolor autem officiis fugit officia, quae ullam sit.
+			p.title-sm.t-center Chef cook
+			.flex.ai-center.t-center.my-3.flex-gap-2
+				span.flex-4.bold.by-1.b-tertiary.py Amado
+				+img(75).flex-4.circle
+				span.flex-4.bold.by-1.b-tertiary.py Gabriel
+			p.subtitle-md.t-center Unique creations for unique occasions.
+		.flex-4-sm.img-container
+			img(src="img/product.jpg", alt="")
+
+	//- ------------
+	section.bg-black.py-lg
+		.content-m.flex.flex-gap-4
+			.flex-6-md.t-white.flex-col.ai-center.my-xl
+				h2.title-lg Breakfast
+				p.subtitle-sm 7AM BREAKFAST WE'RE OPEN!
+				p.title-sm Full Breakfast
+				p Lorem ipsum dolor sit amet consectetur.
+				p.title-xl.t-tertiary
+					span.t-3 $
+					span 12.49
+				hr.hr-xl
+				p.title-sm Toast & Jam
+				p.t-2 Lorem, ipsum dolor.
+				p.title-sm Lorem ipsum dolor sit.
+				p.t-2 Lorem, ipsum dolor.
+				p.title-xl.t-tertiary
+					span.t-3 $
+					span 12.49
+
+			//- --------
+			.flex-6-md.bg-white.p.t-center
+				.b.p.full-h.b-dashed.b-secondary
+					.flex.ai-center.t-center.my-3
+					p.title-sm.t-center Chef cook
+					.flex.ai-center.t-center.my-3.flex-gap-2
+						span.flex-4.bold.by-1.b-tertiary.py Amado
+						+img(75).flex-auto.circle
+						span.flex-4.bold.by-1.b-tertiary.py Gabriel
+					hr.hr-md.b-tertiary.mx-a
+					h2.title-sm Your Morning Excape With Flair
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium?
+					button.btn-lg.b.b-tertiary.t-tertiary.btn-lg READ
+
+	//- ------------
+	.content-m.bg-white.py-md.px
+		h3.title-md.t-center Reuden sandwitch 
+		p.subtitle-sm.t-center THE BEST SANDWITCH YOU'VE EVER TASTED!
+		.flex.flex-gap-2
+			.flex-5-md
+				.card-flex
+					+img(150).card-thumbnail-md
+					div.card-body
+						p.t-primary.bold Class apetent
+						p.t-sm Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, temporibus.
+				.card-flex
+					+img(150).card-thumbnail-md
+					div.card-body
+						p.t-primary.bold Class apetent
+						p.t-sm Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, temporibus.
+				.card-flex
+					+img(150).card-thumbnail-md
+					div.card-body
+						p.t-primary.bold Class apetent
+						p.t-sm Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, temporibus.
+
+				h3.title-md METHOD
+				p.subtitle.t-italic Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat.
+				button.font-2.b.b-tertiary.t-tertiary.btn-lg FULL RECIPE
+
+			.flex-auto.img-container
+				img(src="img/bg.jpg", alt="") 
+			.flex-4.flex-col.t-uppercase.ai-center.font-2.jc-center
+				span prep
+				span.t-6 15
+				span prep
+				span.t-6 35
+				span.t-sm mins
+				span.t-tertiary prep
+				span.t-tertiary.t-8 50
+				span.t-tertiary.t-sm mins
+	//- -------------
+	section.bg-secondary.py-lg
+		.content-m.flex.flex-gap-col
+			.flex.b.flex-5 x
+			.flex.b.flex-2 x
+			.flex.b.flex-5 x
+
+
+
+
+
+
+//--------------------------------------
+block foot
+
+
+//--------------------------------------
+block scripts
